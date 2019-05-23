@@ -1,0 +1,14 @@
+void setupPointers();
+int init_welcome(char* buf, int player, int clientfd);
+void setupGame();
+int *parseMessage(char *msg, int player);
+int correct_message(char* buf, int player);
+int pass_or_fail(int *correct, char* msg);
+int endCheck();
+int checkLives(int player);
+int getRoundNo();
+void setLives(int player, int lives);
+void shutdownGame();
+void nextRound();
+int getPlayerID(int i);
+void decrementPlayers();
